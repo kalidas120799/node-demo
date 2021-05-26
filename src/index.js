@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(morgan("dev"))
 
-app.get("/test",(req,res)=>{
+app.get("/",(req,res)=>{
     return res.send("okay")
 })
 
