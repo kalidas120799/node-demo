@@ -1,9 +1,10 @@
 const express = require("express")
 const morgan = require("morgan")
+const path=require("path")
 const port = 1000 || process.env.PORT
 var app = express()
 
-//middlewares
+//body parser
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
